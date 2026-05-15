@@ -1,29 +1,33 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Everything you want to know about working with Crestivo.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "How long does it take to complete a project?",
+      "answer": "Most projects launch within days, not weeks. Select digital animations and content assets can be delivered in as little as one day. Larger projects like full websites or business blueprints typically take 3–7 days depending on scope."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Do I need any technical knowledge to work with Crestivo?",
+      "answer": "None at all. We handle everything from start to finish — design, development, content, and delivery. You just tell us your vision and we engineer the rest."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "How does the price match guarantee work?",
+      "answer": "Simple — get a quote from anywhere, bring it to us, and we will match it, beat it, and give you an additional discount on top. No exceptions, no fine print. You get the same product and same expectations at a better price."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Can Crestivo work with small businesses and everyday people — not just big brands?",
+      "answer": "Absolutely. We built Crestivo specifically for small businesses, entrepreneurs, and everyday people who want professional-grade results without a corporate budget. Whether you need a logo, a website, a music video, or a full business blueprint — we do it all."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "What is a business blueprint and who is it for?",
+      "answer": "A business blueprint is a deep, detailed roadmap for your business idea. Give us one sentence and we turn it into a full plan — including a business description, market analysis, marketing and sales strategy, operations plan, and financial projections. It's designed for entrepreneurs, startups, and established businesses looking to scale."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Can everything Crestivo builds grow with my business?",
+      "answer": "Yes. Every system we build is designed to scale with you. From QR platforms to websites to automation workflows — everything is built on modern infrastructure that grows as your business grows."
+    },
+    {
+      "question": "Do you offer support after a project is complete?",
+      "answer": "Absolutely. We don't just hand you a finished product and disappear. We offer ongoing support, updates, and strategy to make sure what we built continues to perform and grow with your needs."
     }
   ]
 }
