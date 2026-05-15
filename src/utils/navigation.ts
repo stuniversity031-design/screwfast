@@ -4,7 +4,7 @@ const navBarLinks = [
   { name: 'Work', url: '/work' },
   { name: 'Process', url: '/process' },
   { name: 'Pricing', url: '/pricing' },
-  { name: 'Testimonials', url: '/testimonials' },
+  { name: 'Testimonials', url: '/#testimonials' },
   { name: 'Contact', url: '/contact' },
 ];
 
