@@ -12,14 +12,10 @@ import { SITE } from '@data/constants';
 const strings = Astro.currentLocale === 'fr' ? frStrings : enStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string =
-  Astro.currentLocale === 'fr' ? 'Rester à jour' : 'Stay up to date';
+const sectionThreeTitle: string = 'Stay in the Loop';
 const sectionThreeContent: string =
-  Astro.currentLocale === 'fr'
-    ? 'Restez informé des derniers outils et des offres exclusives.'
-    : 'Stay updated with the latest tools and exclusive deals.';
-const crafted: string =
-  Astro.currentLocale === 'fr' ? 'Fabriqué par' : 'Crafted by';
+  'Get updates on new services, limited time deals, and marketing tips delivered straight to your inbox.';
+const crafted: string = 'Built by';
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">
@@ -30,8 +26,15 @@ const crafted: string =
       <div class="col-span-full lg:col-span-1">
         {/* Brand Logo */}
         <BrandLogo class="h-auto w-32" />
+        <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
+          Crestivo is a marketing & tech agency specializing in QR codes, animations, flyers, business cards, videos, and digital systems.
+        </p>
+        <p class="mt-2 text-sm font-medium text-yellow-600 dark:text-yellow-400">
+          Propertiesonlinellc@outlook.com
+        </p>
       </div>
-      {/* An array of links for Product and Company sections */}
+
+      {/* Footer navigation links */}
       {
         strings.footerLinks.map(section => (
           <div class="col-span-1">
@@ -39,7 +42,7 @@ const crafted: string =
               {section.section}
             </h3>
             <ul class="mt-3 grid space-y-3">
-              {section.links.map((link, index) => (
+              {section.links.map((link) => (
                 <li>
                   <a
                     href={link.url}
@@ -47,11 +50,6 @@ const crafted: string =
                   >
                     {link.name}
                   </a>
-                  {section.section === 'Company' && index === 2 ? (
-                    <span class="ms-1 inline rounded-lg bg-orange-500 px-2 py-1 text-xs font-bold text-neutral-50">
-                      We're hiring!
-                    </span>
-                  ) : null}
                 </li>
               ))}
             </ul>
@@ -63,13 +61,20 @@ const crafted: string =
         <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
           {sectionThreeTitle}
         </h3>
-
         <form>
           <EmailFooterInput />
           <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
             {sectionThreeContent}
           </p>
         </form>
+        <div class="mt-4 rounded-lg bg-yellow-500/10 px-4 py-3 dark:bg-yellow-400/10">
+          <p class="text-sm font-bold text-yellow-700 dark:text-yellow-400">
+            🔥 Sign up now and get 10% off any service.
+          </p>
+          <p class="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+            Bundle 2+ services for an additional 10% off. Price match guarantee — no exceptions.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -78,14 +83,12 @@ const crafted: string =
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span>
-          {SITE.title}. {crafted}
+          © <span id="current-year"></span> Crestivo. {crafted}
           <a
             class="rounded-lg font-medium underline underline-offset-2 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-hidden focus-visible:ring-3 dark:ring-zinc-200 dark:hover:text-neutral-300"
-            href="https://www.gulamoff.dev/"
-            target="_blank"
-            rel="noopener noreferrer">gulamoff</a
-          >.
+            href="mailto:Propertiesonlinellc@outlook.com"
+          >Crestivo Agency</a
+          >. All rights reserved.
         </p>
       </div>
 
