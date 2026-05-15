@@ -1,36 +1,43 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: 'Home', url: '/' },
-  { name: 'Products', url: '/products' },
   { name: 'Services', url: '/services' },
-  { name: 'Blog', url: '/blog' },
+  { name: 'Work', url: '/work' },
+  { name: 'Process', url: '/process' },
+  { name: 'Pricing', url: '/pricing' },
+  { name: 'Testimonials', url: '/testimonials' },
   { name: 'Contact', url: '/contact' },
 ];
+
 // An array of links for footer
 const footerLinks = [
   {
-    section: 'Ecosystem',
+    section: 'Services',
     links: [
-      { name: 'Documentation', url: '/welcome-to-docs/' },
-      { name: 'Tools & Equipment', url: '/products' },
-      { name: 'Construction Services', url: '/services' },
+      { name: 'Web & Funnel Systems', url: '/services' },
+      { name: 'QR Code Platforms', url: '/services' },
+      { name: 'Content & Digital Media', url: '/services' },
+      { name: 'Brand & Strategy', url: '/services' },
+      { name: 'Automation & AI Tools', url: '/services' },
     ],
   },
   {
     section: 'Company',
     links: [
-      { name: 'About us', url: '#' },
-      { name: 'Blog', url: '/blog' },
-      { name: 'Careers', url: '#' },
-      { name: 'Customers', url: '#' },
+      { name: 'About Us', url: '#' },
+      { name: 'Our Work', url: '/work' },
+      { name: 'Pricing', url: '/pricing' },
+      { name: 'Contact', url: '/contact' },
+      { name: 'Privacy Policy', url: '/privacy' },
+      { name: 'Terms', url: '/terms' },
     ],
   },
 ];
+
 // An object of links for social icons
 const socialLinks = {
   facebook: 'https://www.facebook.com/',
   x: 'https://twitter.com/',
-  github: 'https://github.com/mearashadowfax/ScrewFast',
+  github: 'https://github.com/',
   google: 'https://www.google.com/',
   slack: 'https://slack.com/',
 };
