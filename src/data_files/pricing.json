@@ -1,13 +1,13 @@
 {
-  "title": "Limited Time Pricing — Up to 65% Off",
+  "title": "Limited Time Pricing — Up to 85% Off",
   "subTitle": "Lock in these rates now before they're gone. Every package includes our price match guarantee — bring us any quote and we'll beat it. Bundle any 2+ services and save an additional 10%.",
-  "badge": "65% Off — Limited Time",
+  "badge": "85% Off — Limited Time",
   "thirdOption": "Need something custom or have a bigger business package in mind?",
   "btnText": "Get a Free Custom Quote",
 
   "starterKit": {
     "name": "Mini Package",
-    "description": "Built for entrepreneurs and small businesses ready to launch. Over $1,400 in value — yours today for just $197. Limited time only. Save 85% today.",
+    "description": "Perfect for everyday people, podcasters, and anyone just getting started. Over $285 in value — yours today for just $9.99. Limited time only.",
     "price": "9",
     "cents": ".99",
     "billingFrequency": "USD / one time — limited time only",
@@ -16,7 +16,7 @@
       "1 custom cartoon animation photo",
       "10 QR codes — any kind, any color",
       "YouTube channel setup with hashtags, channel description, profile picture, banner, and social media links added",
-      "Sign up now and get 10% off any additional service"
+      "QR Unlimited Add-On — $29/mo sold separately"
     ],
     "purchaseBtnTitle": "Grab This Deal Now",
     "purchaseLink": "/contact"
@@ -24,7 +24,7 @@
 
   "professionalToolbox": {
     "name": "Starter Business Package",
-    "description": "Built for entrepreneurs and small businesses ready to launch. Was $1,400+ — yours today starting at $197. Bundle with any other service and save an extra 10%.",
+    "description": "Built for entrepreneurs and small businesses ready to launch. Over $1,400 in value — yours today for just $197. Limited time only. Save 85% today.",
     "price": "197",
     "cents": ".00",
     "billingFrequency": "USD / starting at — limited time only",
@@ -37,8 +37,7 @@
       "5 QR codes — any kind, any color",
       "Sales pitch and elevator pitch written for you",
       "2026 competitive marketing analysis",
-      "QR Unlimited Add-On available for $29/mo — unlimited QR codes daily including vCards, payment links, booking pages, digital menus, WiFi passwords, event details, and more",
-      "Sign up now and get 10% off any additional service"
+      "QR Unlimited Add-On — $29/mo sold separately"
     ],
     "purchaseBtnTitle": "Get Started Today",
     "purchaseLink": "/contact"
