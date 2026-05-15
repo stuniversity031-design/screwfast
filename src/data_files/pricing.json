@@ -1,38 +1,46 @@
 {
-  "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
-  "btnText": "Get a Custom Quote",
+  "title": "Limited Time Pricing — Up to 65% Off",
+  "subTitle": "Lock in these rates now before they're gone. Every package includes our price match guarantee — bring us any quote and we'll beat it. Bundle any 2+ services and save an additional 10%.",
+  "badge": "65% Off — Limited Time",
+  "thirdOption": "Need something custom or have a bigger business package in mind?",
+  "btnText": "Get a Free Custom Quote",
 
   "starterKit": {
-    "name": "Starter Kit",
-    "description": "Best option for DIY projects",
-    "price": "49",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Mini Package",
+    "description": "Perfect for everyday people, podcasters, and anyone just getting started. Was $285 — yours today for only $9.99",
+    "price": "9",
+    "cents": ".99",
+    "billingFrequency": "USD / one time — limited time only",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "1 six-second promo video",
+      "1 custom cartoon animation photo",
+      "10 QR codes — any kind, any color",
+      "YouTube channel setup with hashtags, channel description, profile picture, banner, and social media links added",
+      "Sign up now and get 10% off any additional service"
     ],
-    "purchaseBtnTitle": "Get the Starter Kit",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Grab This Deal Now",
+    "purchaseLink": "/contact"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
-    "description": "Best for large scale uses",
-    "price": "89",
+    "name": "Starter Business Package",
+    "description": "Built for entrepreneurs and small businesses ready to launch. Was $1,400+ — yours today starting at $197. Bundle with any other service and save an extra 10%.",
+    "price": "197",
     "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "billingFrequency": "USD / starting at — limited time only",
     "features": [
-      "Premium tool selection",
-      "Priority support",
-      "Exclusive content & deals",
-      "Bulk order discounts"
+      "1 professional static website or landing page",
+      "Full business blueprint — market analysis, strategy, operations & financial projections",
+      "Complete branding kit — logo, slogan, and brand identity",
+      "1 business card design",
+      "2 professional business flyers",
+      "5 QR codes — any kind, any color",
+      "Sales pitch and elevator pitch written for you",
+      "2026 competitive marketing analysis",
+      "QR Unlimited Add-On available for $29/mo — unlimited QR codes daily including vCards, payment links, booking pages, digital menus, WiFi passwords, event details, and more",
+      "Sign up now and get 10% off any additional service"
     ],
-    "purchaseBtnTitle": "Get the Professional Toolbox",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Get Started Today",
+    "purchaseLink": "/contact"
   }
 }
