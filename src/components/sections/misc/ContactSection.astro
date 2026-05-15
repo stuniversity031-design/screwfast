@@ -9,12 +9,11 @@ import TextAreaInput from '@components/ui/forms/input/TextAreaInput.astro';
 import Icon from '@components/ui/icons/Icon.astro';
 
 // Define the variables that will be used in this component
-const title: string = 'Contact us';
+const title: string = 'Book a Free Strategy Call';
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
+  "Ready to grow your business? Tell us what you need and we'll respond within minutes — day or night.";
 const formTitle: string = 'Fill in the form below';
 const formSubTitle: string = "We respond within minutes — day or night.";
-
 ---
 
 {/* Contact Us */}
@@ -38,35 +37,36 @@ const formSubTitle: string = "We respond within minutes — day or night.";
         >
           {formTitle}
         </h2>
-        {
-          /* Form for user input with various input fields.-->
-        {/* Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)*/
-        }
-        <form>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="76f64f26-50b3-4adc-bf80-11555cd6ea65" />
+          <input type="hidden" name="subject" value="New Consultation Request — Crestivo" />
+          <input type="hidden" name="redirect" value="https://screwfast-ten-rho.vercel.app/contact" />
+
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="hs-firstname-contacts"
                 label="First Name"
-                name="hs-firstname-contacts"
+                name="name"
               />
               <TextInput
                 id="hs-lastname-contacts"
                 label="Last Name"
-                name="hs-lastname-contacts"
+                name="lastname"
               />
             </div>
             <EmailContactInput id="hs-email-contacts" />
             <PhoneInput id="hs-phone-number" />
             <TextAreaInput
               id="hs-about-contacts"
-              label="Details"
-              name="hs-about-contacts"
+              label="Tell us about your project or idea"
+              name="message"
             />
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Send Message" />
+            <AuthBtn title="Book My Free Strategy Call" />
           </div>
 
           <div class="mt-3 text-center">
@@ -77,45 +77,42 @@ const formSubTitle: string = "We respond within minutes — day or night.";
         </form>
       </div>
 
-      {
-        /*ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.*/
-      }
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
-          isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
           heading="FAQ"
-          content="Explore our FAQ for quick, clear answers to common queries."
+          content="Explore our FAQ for quick, clear answers to common questions about our services."
           isLinkVisible={true}
           linkTitle="Visit FAQ"
-          linkURL="#"
+          linkURL="/#faq"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Visit Our Office"
+          content="Crestivo Agency — New York"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
+          addressContent="154 W 14th St, New York, NY 10011"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
+          heading="Email Us Directly"
+          content="Prefer to send a message? Reach us at"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
-          linkURL="#"
+          linkTitle="Propertiesonlinellc@outlook.com"
+          linkURL="mailto:Propertiesonlinellc@outlook.com"
           ><Icon name="envelopeOpen" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Pricing & Packages"
+          content="See our current limited time offers and package deals."
+          isLinkVisible={true}
+          linkTitle="View Pricing"
+          linkURL="/#pricing"
+          isArrowVisible={true}
+          ><Icon name="question" />
         </ContactIconBlock>
       </div>
     </div>
