@@ -15,12 +15,9 @@ const placeholder =
   Astro.currentLocale === 'fr' ? 'Entrez votre email' : 'Enter your email';
 ---
 
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="6688fe13-b698-49f7-8a94-4fa5f39e447b" />
-  <input type="hidden" name="subject" value="New Newsletter Signup — Crestivo" />
-  <input type="hidden" name="redirect" value="https://screwfast-ten-rho.vercel.app" />
-
+<div>
   <div
+    id="footer-form-wrap"
     class="mt-4 flex flex-col items-center gap-2 rounded-lg bg-neutral-200 p-2 sm:flex-row sm:gap-3 dark:bg-neutral-800"
   >
     <div class="w-full">
@@ -35,10 +32,49 @@ const placeholder =
       />
     </div>
     <button
-      type="submit"
+      id="footer-submit"
+      type="button"
       class="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent bg-orange-400 p-3 text-sm font-bold whitespace-nowrap text-neutral-50 ring-zinc-500 outline-hidden transition duration-300 hover:bg-orange-500 focus-visible:ring-3 disabled:pointer-events-none disabled:opacity-50 sm:w-auto dark:ring-zinc-200 dark:focus:ring-1 dark:focus:outline-hidden"
     >
       {title}
     </button>
   </div>
-</form>
+  <p id="footer-success" class="mt-2 hidden text-sm font-medium text-yellow-600 dark:text-yellow-400">
+    ✅ You're in! We'll be in touch soon.
+  </p>
+</div>
+
+<script>
+  const btn = document.getElementById('footer-submit');
+  const emailInput = document.getElementById('footer-input') as HTMLInputElement;
+  const successMsg = document.getElementById('footer-success');
+  const formWrap = document.getElementById('footer-form-wrap');
+
+  btn?.addEventListener('click', async () => {
+    const email = emailInput?.value;
+    if (!email) return;
+
+    const formData = new FormData();
+    formData.append('access_key', '6688fe13-b698-49f7-8a94-4fa5f39e447b');
+    formData.append('subject', 'New Newsletter Signup — Crestivo');
+    formData.append('email', email);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        if (formWrap) formWrap.style.display = 'none';
+        if (successMsg) successMsg.classList.remove('hidden');
+      } else {
+        alert('Something went wrong. Please email us directly at Propertiesonlinellc@outlook.com');
+      }
+    } catch {
+      alert('Something went wrong. Please email us directly at Propertiesonlinellc@outlook.com');
+    }
+  });
+</script>
