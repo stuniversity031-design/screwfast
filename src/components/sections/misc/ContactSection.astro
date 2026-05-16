@@ -1,6 +1,5 @@
 ---
 // Import the necessary dependencies.
-import AuthBtn from '@components/ui/buttons/AuthBtn.astro';
 import ContactIconBlock from '@components/ui/blocks/ContactIconBlock.astro';
 import TextInput from '@components/ui/forms/input/TextInput.astro';
 import EmailContactInput from '@components/ui/forms/input/EmailContactInput.astro';
@@ -41,7 +40,7 @@ const formSubTitle: string = "We respond within minutes — day or night.";
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="6688fe13-b698-49f7-8a94-4fa5f39e447b" />
           <input type="hidden" name="subject" value="New Consultation Request — Crestivo" />
-          <input type="hidden" name="redirect" value="https://screwfast-ten-rho.vercel.app/contact" />
+          <input type="hidden" name="botcheck" value="" style="display:none" />
 
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -66,12 +65,20 @@ const formSubTitle: string = "We respond within minutes — day or night.";
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Book My Free Strategy Call" />
+            <button
+              type="submit"
+              class="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent bg-yellow-400 px-4 py-3 text-sm font-bold text-neutral-700 transition duration-300 hover:bg-yellow-500"
+            >
+              Book My Free Strategy Call
+            </button>
           </div>
 
           <div class="mt-3 text-center">
             <p class="text-sm text-neutral-600 dark:text-neutral-400">
               {formSubTitle}
+            </p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Or email us directly at <a href="mailto:Propertiesonlinellc@outlook.com" class="font-medium text-yellow-600 underline dark:text-yellow-400">Propertiesonlinellc@outlook.com</a>
             </p>
           </div>
         </form>
