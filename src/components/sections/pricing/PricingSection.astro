@@ -33,12 +33,9 @@ interface PricingSectionProps {
 }
 ---
 
-<script async src="https://js.stripe.com/v3/buy-button.js"></script>
-
 <section
   class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
 >
-  {/* Section heading and sub-heading */}
   <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
     <h2
       class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
@@ -50,7 +47,6 @@ interface PricingSectionProps {
     </p>
   </div>
 
-  {/* Contains two main product blocks */}
   <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-0">
 
     {/* Mini Package */}
@@ -87,14 +83,14 @@ interface PricingSectionProps {
         }
       </ul>
 
-      {/* Stripe Buy Button - Mini Package */}
-      <div class="mt-4">
-        <stripe-buy-button
-          buy-button-id="buy_btn_1TXuqCC0ujlxDt7cGJ1tvffZ"
-          publishable-key="pk_live_51Sv2FkC0ujlxDt7cCirw2rn91iuNfmozw9o8jOznSy69zEz3UoBiFkBrTAEGfmivGC9X2rPoGZbiWK5LU20T36ho00c8WdXlB1"
-        >
-        </stripe-buy-button>
-      </div>
+      <a
+        href="https://buy.stripe.com/14A6oG7erfrF4J91i22Nq0h"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block rounded-lg bg-yellow-400 px-8 py-3 text-center text-sm font-bold text-neutral-800 transition duration-300 hover:bg-yellow-500"
+      >
+        Buy Now — $9.99
+      </a>
     </div>
 
     {/* Starter Business Package */}
@@ -142,18 +138,17 @@ interface PricingSectionProps {
         }
       </ul>
 
-      {/* Stripe Buy Button - Starter Business Package */}
-      <div class="mt-4">
-        <stripe-buy-button
-          buy-button-id="buy_btn_1TXunwC0ujlxDt7ctzPD4ZVx"
-          publishable-key="pk_live_51Sv2FkC0ujlxDt7cCirw2rn91iuNfmozw9o8jOznSy69zEz3UoBiFkBrTAEGfmivGC9X2rPoGZbiWK5LU20T36ho00c8WdXlB1"
-        >
-        </stripe-buy-button>
-      </div>
+      <a
+        href="https://buy.stripe.com/8x29ASbuH5R5dfF3qa2Nq0g"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block rounded-lg bg-white px-8 py-3 text-center text-sm font-bold text-orange-600 transition duration-300 hover:bg-orange-50"
+      >
+        Buy Now — $197
+      </a>
     </div>
   </div>
 
-  {/* Call to action for custom packages */}
   <div class="mt-8 flex items-center justify-center gap-x-3 md:mt-12">
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
       {pricing.thirdOption}
