@@ -1,7 +1,7 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: 'Services', url: '/#features' },
-  { name: 'Work', url: '/#features-navs' },
+  { name: 'Services', url: '/#services' },
+  { name: 'Work', url: '/#work' },
   { name: 'Process', url: '/#testimonials' },
   { name: 'Pricing', url: '/#pricing' },
   { name: 'Testimonials', url: '/#testimonials' },
@@ -13,18 +13,18 @@ const footerLinks = [
   {
     section: 'Services',
     links: [
-      { name: 'Web & Funnel Systems', url: '/#features' },
-      { name: 'QR Code Platforms', url: '/#features' },
-      { name: 'Content & Digital Media', url: '/#features' },
-      { name: 'Brand & Strategy', url: '/#features' },
-      { name: 'Automation & AI Tools', url: '/#features' },
+      { name: 'Web & Funnel Systems', url: '/#services' },
+      { name: 'QR Code Platforms', url: '/#services' },
+      { name: 'Content & Digital Media', url: '/#services' },
+      { name: 'Brand & Strategy', url: '/#services' },
+      { name: 'Automation & AI Tools', url: '/#services' },
     ],
   },
   {
     section: 'Company',
     links: [
-      { name: 'About Us', url: '/#features' },
-      { name: 'Our Work', url: '/#features-navs' },
+      { name: 'About Us', url: '/#services' },
+      { name: 'Our Work', url: '/#work' },
       { name: 'Pricing', url: '/#pricing' },
       { name: 'Contact', url: '/contact' },
       { name: 'Privacy Policy', url: '#' },
@@ -37,7 +37,7 @@ const footerLinks = [
 const socialLinks = {
   facebook: 'https://www.facebook.com/',
   x: 'https://twitter.com/',
-  github: 'https://github.com/',
+  github: 'https://youtube.com/@aimoneygrowthwealthsecrets?si=65_SOxKboqbuXjJt',
   google: 'https://www.google.com/',
   slack: 'https://slack.com/',
 };
