@@ -1,9 +1,9 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: 'Services', url: '/services' },
-  { name: 'Work', url: '/work' },
-  { name: 'Process', url: '/process' },
-  { name: 'Pricing', url: '/pricing' },
+  { name: 'Services', url: '/#features' },
+  { name: 'Work', url: '/#features-navs' },
+  { name: 'Process', url: '/#testimonials' },
+  { name: 'Pricing', url: '/#pricing' },
   { name: 'Testimonials', url: '/#testimonials' },
   { name: 'Contact', url: '/contact' },
 ];
@@ -13,22 +13,22 @@ const footerLinks = [
   {
     section: 'Services',
     links: [
-      { name: 'Web & Funnel Systems', url: '/services' },
-      { name: 'QR Code Platforms', url: '/services' },
-      { name: 'Content & Digital Media', url: '/services' },
-      { name: 'Brand & Strategy', url: '/services' },
-      { name: 'Automation & AI Tools', url: '/services' },
+      { name: 'Web & Funnel Systems', url: '/#features' },
+      { name: 'QR Code Platforms', url: '/#features' },
+      { name: 'Content & Digital Media', url: '/#features' },
+      { name: 'Brand & Strategy', url: '/#features' },
+      { name: 'Automation & AI Tools', url: '/#features' },
     ],
   },
   {
     section: 'Company',
     links: [
-      { name: 'About Us', url: '#' },
-      { name: 'Our Work', url: '/work' },
-      { name: 'Pricing', url: '/pricing' },
+      { name: 'About Us', url: '/#features' },
+      { name: 'Our Work', url: '/#features-navs' },
+      { name: 'Pricing', url: '/#pricing' },
       { name: 'Contact', url: '/contact' },
-      { name: 'Privacy Policy', url: '/privacy' },
-      { name: 'Terms', url: '/terms' },
+      { name: 'Privacy Policy', url: '#' },
+      { name: 'Terms', url: '#' },
     ],
   },
 ];
