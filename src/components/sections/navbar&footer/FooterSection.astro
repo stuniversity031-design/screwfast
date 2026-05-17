@@ -8,10 +8,8 @@ import Icon from '@components/ui/icons/Icon.astro';
 import BrandLogo from '@components/BrandLogo.astro';
 import { SITE } from '@data/constants';
 
-// Select the correct translation based on the page's lang prop:
 const strings = Astro.currentLocale === 'fr' ? frStrings : enStrings;
 
-// Define the variables that will be used in this component
 const sectionThreeTitle: string = 'Join Our Newsletter';
 const sectionThreeContent: string =
   'Get updates on new services, limited time deals, and marketing tips delivered straight to your inbox.';
@@ -24,7 +22,6 @@ const crafted: string = 'Built by';
   >
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
       <div class="col-span-full lg:col-span-1">
-        {/* Brand Logo */}
         <BrandLogo class="h-auto w-32" />
         <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
           Crestivo is a marketing & tech agency specializing in QR codes, animations, flyers, business cards, videos, and digital systems.
@@ -37,7 +34,6 @@ const crafted: string = 'Built by';
         </p>
       </div>
 
-      {/* Footer navigation links */}
       {
         strings.footerLinks.map(section => (
           <div class="col-span-1">
@@ -64,12 +60,10 @@ const crafted: string = 'Built by';
         <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
           {sectionThreeTitle}
         </h3>
-        <form>
-          <EmailFooterInput />
-          <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-            {sectionThreeContent}
-          </p>
-        </form>
+        <EmailFooterInput />
+        <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
+          {sectionThreeContent}
+        </p>
         <div class="mt-4 rounded-lg bg-yellow-500/10 px-4 py-3 dark:bg-yellow-400/10">
           <p class="text-sm font-bold text-yellow-700 dark:text-yellow-400">
             🔥 Sign up now and get 10% off any service.
@@ -95,7 +89,6 @@ const crafted: string = 'Built by';
         </p>
       </div>
 
-      {/* Social Brands */}
       <div>
         <FooterSocialLink url={strings.socialLinks.facebook}
           ><Icon name="facebookFooter" />
