@@ -35,105 +35,119 @@ const avatarSrcs: Array<string> = [
     url="/contact"
   />
 
-  <HeroSection
-    title=`The Marketing & <span
-        class="text-yellow-500 dark:text-yellow-400">Tech Company</span>`
-    subTitle="We use modern technology systems to tailor to any business, entrepreneur, or everyday person — websites, animations, QR tech, digital content, business blueprints, business cards, logos, and flyers. Use our ROI calculator and let our professional business consultants design a marketing strategy for you."
-    primaryBtn="Get Started"
-    primaryBtnURL="/contact"
-    secondaryBtn="See Our Work"
-    secondaryBtnURL="/work"
-    withReview={true}
-    avatars={avatarSrcs}
-    rating=`<span class="font-bold">4.9</span> / 5`
-    starCount={5}
-    reviews=`From Over <span class="font-bold">200+</span> Happy Clients`
-    src={heroImage}
-    alt="Crestivo marketing and technology agency hero image"
-  />
+  <div id="hero">
+    <HeroSection
+      title=`The Marketing & <span
+          class="text-yellow-500 dark:text-yellow-400">Tech Company</span>`
+      subTitle="We use modern technology systems to tailor to any business, entrepreneur, or everyday person — websites, animations, QR tech, digital content, business blueprints, business cards, logos, and flyers. Use our ROI calculator and let our professional business consultants design a marketing strategy for you."
+      primaryBtn="Get Started"
+      primaryBtnURL="/contact"
+      secondaryBtn="See Our Work"
+      secondaryBtnURL="/#work"
+      withReview={true}
+      avatars={avatarSrcs}
+      rating=`<span class="font-bold">4.9</span> / 5`
+      starCount={5}
+      reviews=`From Over <span class="font-bold">200+</span> Happy Clients`
+      src={heroImage}
+      alt="Crestivo marketing and technology agency hero image"
+    />
+  </div>
 
-  <ClientsSection
-    title="Trusted by Businesses & Entrepreneurs"
-    subTitle="Modern tools. Real results. Built for brands of every size."
-    partners={partnersData}
-  />
+  <div id="clients">
+    <ClientsSection
+      title="Trusted by Businesses & Entrepreneurs"
+      subTitle="Modern tools. Real results. Built for brands of every size."
+      partners={partnersData}
+    />
+  </div>
 
-  <FeaturesGeneral
-    title="Built for Businesses & Everyday People"
-    subTitle="Crestivo is a marketing and technology agency that can do it all — from creating small ads to ultra-professional videos and commercials for any brand, person, or product. We don't just design — we engineer. Our systems are built to do all the work for you, from QR codes to full websites, animations, videos, digital content, YouTube pages, and podcast creation. Everything we create will produce significant results."
-    src={featureImage}
-    alt="Crestivo marketing systems and digital tools"
-    features={features}
-  />
+  <div id="services">
+    <FeaturesGeneral
+      title="Built for Businesses & Everyday People"
+      subTitle="Crestivo is a marketing and technology agency that can do it all — from creating small ads to ultra-professional videos and commercials for any brand, person, or product. We don't just design — we engineer. Our systems are built to do all the work for you, from QR codes to full websites, animations, videos, digital content, YouTube pages, and podcast creation. Everything we create will produce significant results."
+      src={featureImage}
+      alt="Crestivo marketing systems and digital tools"
+      features={features}
+    />
+  </div>
 
-  <FeaturesNavs
-    title=`Everything Your Business Needs — <span class="text-yellow-500 dark:text-yellow-400">All In One Place</span>`
-    tabs={[
-      {
-        heading: 'Web & Funnel Systems',
-        content:
-          'High-converting websites, landing pages, and marketing ads built to increase your sales performance. Includes cartoon and character creation for your brand.',
-        svg: 'tools',
-        src: tools,
-        alt: 'Web and funnel systems built by Crestivo',
-        first: true,
-      },
-      {
-        heading: 'QR Code Platforms',
-        content:
-          'Dynamic QR systems for marketing, events, products, and customer engagement. Real estate agents use our QR vCards to list and show properties. Restaurants use them for menus and promos.',
-        svg: 'dashboard',
-        src: dashboard,
-        alt: 'QR code platform built by Crestivo',
-        second: true,
-      },
-      {
-        heading: 'Content & Digital Media',
-        content:
-          'Videos, animations, branded visuals, podcasts, and marketing assets that capture attention and drive results. Launch a full digital animation in as little as one day.',
-        svg: 'house',
-        src: construction,
-        alt: 'Content and digital media created by Crestivo',
-      },
-    ]}
-  />
+  <div id="work">
+    <FeaturesNavs
+      title=`Everything Your Business Needs — <span class="text-yellow-500 dark:text-yellow-400">All In One Place</span>`
+      tabs={[
+        {
+          heading: 'Web & Funnel Systems',
+          content:
+            'High-converting websites, landing pages, and marketing ads built to increase your sales performance. Includes cartoon and character creation for your brand.',
+          svg: 'tools',
+          src: tools,
+          alt: 'Web and funnel systems built by Crestivo',
+          first: true,
+        },
+        {
+          heading: 'QR Code Platforms',
+          content:
+            'Dynamic QR systems for marketing, events, products, and customer engagement. Real estate agents use our QR vCards to list and show properties. Restaurants use them for menus and promos.',
+          svg: 'dashboard',
+          src: dashboard,
+          alt: 'QR code platform built by Crestivo',
+          second: true,
+        },
+        {
+          heading: 'Content & Digital Media',
+          content:
+            'Videos, animations, branded visuals, podcasts, and marketing assets that capture attention and drive results. Launch a full digital animation in as little as one day.',
+          svg: 'house',
+          src: construction,
+          alt: 'Content and digital media created by Crestivo',
+        },
+      ]}
+    />
+  </div>
 
-  <TestimonialsSection
-    title="What Clients Say About Crestivo"
-    subTitle="We build systems that work — and our clients feel the difference from day one."
-    testimonials={[
-      {
-        content:
-          "Crestivo didn't just build us a website — they built the engine behind our business. Professional, fast, and results-driven from start to finish.",
-        author: 'Marcus T.',
-        role: 'Founder | MT Brands',
-        avatarSrc:
-          'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
-      },
-    ]}
-    statistics={[
-      {
-        count: '200+',
-        description: 'businesses and everyday people served across all industries',
-      },
-      {
-        count: '100%',
-        description: 'price match guarantee — we beat any quote, no exceptions',
-      },
-      {
-        count: '1 Day',
-        description: 'turnaround on select digital animations and content assets',
-      },
-      {
-        count: '5★',
-        description: 'average client rating across all projects and services',
-      },
-    ]}
-  />
+  <div id="testimonials">
+    <TestimonialsSection
+      title="What Clients Say About Crestivo"
+      subTitle="We build systems that work — and our clients feel the difference from day one."
+      testimonials={[
+        {
+          content:
+            "Crestivo didn't just build us a website — they built the engine behind our business. Professional, fast, and results-driven from start to finish.",
+          author: 'Marcus T.',
+          role: 'Founder | MT Brands',
+          avatarSrc:
+            'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+        },
+      ]}
+      statistics={[
+        {
+          count: '200+',
+          description: 'businesses and everyday people served across all industries',
+        },
+        {
+          count: '100%',
+          description: 'price match guarantee — we beat any quote, no exceptions',
+        },
+        {
+          count: '1 Day',
+          description: 'turnaround on select digital animations and content assets',
+        },
+        {
+          count: '5★',
+          description: 'average client rating across all projects and services',
+        },
+      ]}
+    />
+  </div>
 
-  <PricingSection pricing={pricing} />
+  <div id="pricing">
+    <PricingSection pricing={pricing} />
+  </div>
 
-  <FAQ title="Questions<br />People Ask" faqs={faqs} />
+  <div id="faq">
+    <FAQ title="Questions<br />People Ask" faqs={faqs} />
+  </div>
 
   <HeroSectionAlt
     title="You Don't Need Another Website. You Need a System That Works for You."
