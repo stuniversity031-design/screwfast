@@ -39,7 +39,6 @@ interface Props {
     {/* Define the title of the page */}
     <title>{title}</title>
     <script is:inline>
-      // Script to handle dark mode. It will check if the theme is stored in localStorage or if dark theme is preferred by system settings
       if (
         localStorage.getItem('hs_theme') === 'dark' ||
         (!('hs_theme' in localStorage) &&
@@ -53,16 +52,14 @@ interface Props {
     <script>
       import '@scripts/lenisSmoothScroll.js';
     </script>
+    {/* Mailchimp Connected Site Script */}
+    <script id="mcjs" is:inline>
+      !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/718add33f30a631d6a6728675/6bdfb547c5e50c1871d31c8aa.js");
+    </script>
   </head>
   <body
     class="flex min-h-screen flex-col bg-neutral-200 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-800"
   >
-    {
-      /*
-    Setting up the main structure of the page.
-    The Navbar is placed at the top, with a slot for the main content and FooterSection at the bottom.
-    */
-    }
     <div
       class="mx-auto w-full max-w-(--breakpoint-2xl) grow px-4 sm:px-6 lg:px-8"
     >
@@ -73,7 +70,6 @@ interface Props {
     </div>
     <FooterSection />
     <script>
-      // https://preline.co
       import 'preline';
       const init = () =>
         (
@@ -84,11 +80,9 @@ interface Props {
       else init();
     </script>
     <style>
-      /* CSS rules for the page scrollbar */
       .scrollbar-hide::-webkit-scrollbar {
         display: none;
       }
-
       .scrollbar-hide {
         -ms-overflow-style: none;
         scrollbar-width: none;
