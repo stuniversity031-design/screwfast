@@ -28,7 +28,7 @@ const footerLinks = [
       { name: 'Pricing', url: '/#pricing' },
       { name: 'Contact', url: '/contact' },
       { name: 'Privacy Policy', url: '/privacy' },
-      { name: 'Terms', url: '/contact' },
+      { name: 'Terms', url: '/terms' },
     ],
   },
 ];
