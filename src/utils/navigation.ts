@@ -25,22 +25,10 @@ const footerLinks = [
     links: [
       { name: 'About Us', url: '/contact' },
       { name: 'Our Work', url: '/contact' },
-      { name: 'Pricing', url: '/contact' },
-      { name: 'Contact', url: '/contact' },
-      { name: 'Privacy Policy', url: '/privacy' },
-      { name: 'Terms', url: '/contact' },
-    ],
-  },
-];
-
-    section: 'Company',
-    links: [
-      { name: 'About Us', url: '/#services' },
-      { name: 'Our Work', url: '/#work' },
       { name: 'Pricing', url: '/#pricing' },
       { name: 'Contact', url: '/contact' },
       { name: 'Privacy Policy', url: '/privacy' },
-      { name: 'Terms', url: '#' },
+      { name: 'Terms', url: '/contact' },
     ],
   },
 ];
