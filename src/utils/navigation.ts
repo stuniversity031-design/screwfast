@@ -13,14 +13,26 @@ const footerLinks = [
   {
     section: 'Services',
     links: [
-      { name: 'Web & Funnel Systems', url: '/#services' },
-      { name: 'QR Code Platforms', url: '/#services' },
-      { name: 'Content & Digital Media', url: '/#services' },
-      { name: 'Brand & Strategy', url: '/#services' },
-      { name: 'Automation & AI Tools', url: '/#services' },
+      { name: 'Web & Funnel Systems', url: '/contact' },
+      { name: 'QR Code Platforms', url: '/contact' },
+      { name: 'Content & Digital Media', url: '/contact' },
+      { name: 'Brand & Strategy', url: '/contact' },
+      { name: 'Automation & AI Tools', url: '/contact' },
     ],
   },
   {
+    section: 'Company',
+    links: [
+      { name: 'About Us', url: '/contact' },
+      { name: 'Our Work', url: '/contact' },
+      { name: 'Pricing', url: '/contact' },
+      { name: 'Contact', url: '/contact' },
+      { name: 'Privacy Policy', url: '/privacy' },
+      { name: 'Terms', url: '/contact' },
+    ],
+  },
+];
+
     section: 'Company',
     links: [
       { name: 'About Us', url: '/#services' },
