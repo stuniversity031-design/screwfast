@@ -17,7 +17,7 @@ const footerLinks = [
       { name: 'QR Code Platforms', url: '/contact' },
       { name: 'Content & Digital Media', url: '/contact' },
       { name: 'Brand & Strategy', url: '/contact' },
-      { name: 'Automation & AI Tools', url: '/contact' },
+      { name: 'Automation', url: '/contact' },
     ],
   },
   {
