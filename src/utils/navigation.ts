@@ -15,8 +15,7 @@ const footerLinks = [
     links: [
       { name: 'Where Did You Hear About Us?', url: 'https://us4.list-manage.com/survey?u=718add33f30a631d6a6728675&id=f2988665ed&e=*|UNIQID|*' },
       { name: 'QR Code Platforms', url: '/contact' },
-      { name: 'Content & Digital Media', url: '/contact' },
-      { name: 'Brand & Strategy', url: '/contact' },
+      { name: 'Digital Content & Media', url: '/contact' },
       { name: 'Automation', url: '/contact' },
     ],
   },
