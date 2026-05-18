@@ -27,7 +27,7 @@ const footerLinks = [
       { name: 'Our Work', url: '/#work' },
       { name: 'Pricing', url: '/#pricing' },
       { name: 'Contact', url: '/contact' },
-      { name: 'Privacy Policy', url: '#' },
+      { name: 'Privacy Policy', url: '/privacy' },
       { name: 'Terms', url: '#' },
     ],
   },
